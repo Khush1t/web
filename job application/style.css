@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.apply_box {
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 4px rgb(96, 96, 96);
+}
+
+.title_small {
+  font-size: 20px;
+}
