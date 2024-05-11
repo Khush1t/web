@@ -25,3 +25,65 @@ body {
 .title_small {
   font-size: 20px;
 }
+
+.form_container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.form_control {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+input:focus {
+  outline-color: rgb(194, 228, 127);
+}
+
+.button_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+button {
+  background-color: rgb(255, 118, 118);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s ease-in;
+}
+button:hover {
+  background-color: rgb(255, 205, 141);
+  box-shadow: 2px 2px 4px black;
+  color: black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.text_area_control {
+  grid-column: 1 / span 2;
+}
+.text_area_control textarea {
+  width: 100%;
+}
+
+@media (max-width: 460px) {
+  .text_area_control {
+    grid-column: 1 / span 1;
+  }
+}
