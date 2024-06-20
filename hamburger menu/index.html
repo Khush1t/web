@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger Menu</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="menu">
+      <img src="/hamburger menu/images/cat.jpg" alt="logo" />
+
+      <div class="right">
+        <a href="" class="head">Home</a>
+        <a href="" class="head">Services</a>
+        <a href="" class="head">Pricing</a>
+
+        <button class="toggle">
+          <span class="material-icons"> more_vert </span>
+        </button>
+      </div>
+
+      <div class="sub-menu">
+        <a href="" class="sub">Home</a>
+        <a href="" class="sub">Services</a>
+        <a href="" class="sub">Pricing</a>
+        <a href="" class="option">Shop</a>
+        <a href="" class="option">Events</a>
+        <a href="" class="option">Gallary</a>
+        <a href="" class="option">Settings</a>
+        <a href="" class="option">Logout</a>
+      </div>
+    </div>
+
+    <script>
+      let subMenu = document.querySelector(".sub-menu");
+
+      window.addEventListener("click", (e) => {
+        if (e.target.closest(".toggle")) {
+          subMenu.style.display = "flex";
+        } else {
+          subMenu.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

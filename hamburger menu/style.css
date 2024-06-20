@@ -1,0 +1,97 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  padding: 0;
+  background: rgb(153, 153, 153);
+  display: grid;
+  /* place-items: start; */
+}
+.menu {
+  width: 100%;
+  height: fit-content;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 2mm;
+  position: relative;
+}
+.menu img {
+  width: 100px;
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+.head {
+  text-decoration: none;
+  font-family: poppins;
+  font-size: 16px;
+  color: black;
+  margin: 0 20px;
+}
+.head:hover {
+  border-bottom: 0.6mm solid rgb(7, 102, 197);
+  color: rgb(7, 102, 197);
+}
+.right button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.right button:hover {
+  background: rgb(233, 243, 255);
+  color: rgb(7, 102, 197);
+}
+.sub-menu {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 200px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background: rgb(51, 137, 243);
+  border-radius: 10px;
+  padding: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.27) 0px 15px 38px,
+    rgba(0, 0, 0, 0.2) 0px 10px 12px;
+}
+.option,
+.sub {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: poppins;
+  color: white;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.option:hover,
+.sub:hover {
+  background: white;
+  color: rgb(1, 42, 84);
+}
+.sub {
+  display: none;
+}
+@media only screen and (max-width: 450px) {
+  .head {
+    display: none;
+  }
+  .sub {
+    display: block;
+  }
+}
